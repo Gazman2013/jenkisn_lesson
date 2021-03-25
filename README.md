@@ -46,3 +46,5 @@
    49  curl localhost:8090
    50  history
    https://issues.jenkins.io/browse/JENKINS-58687
+   
+51. http://34.123.201.23:8090/webapp/
