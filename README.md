@@ -1,10 +1,9 @@
-# jenkisn_lesson
-    4  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
-    5    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-    6  sudo apt-get update
-    7  sudo apt-get install docker-ce docker-ce-cli containerd.io
-    8  dicker --version
-    9  docker --version
+# jenkisn_lesson    4  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+   5    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   6  sudo apt-get update
+   7  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   8  dicker --version
+   9  docker --version
    10  docker pull jenkins/jenkins:lts
    11  docker run -d -p 8080:8080 -p 50000:50000 --volume jenkins-docker-cert:/cert/client --volume jenkins-data:/var/jenkins_home --name=jenkins jenkins/jenkins:lts
    12  docker ps
@@ -46,3 +45,4 @@
    48  ./startup.sh
    49  curl localhost:8090
    50  history
+   https://issues.jenkins.io/browse/JENKINS-58687
