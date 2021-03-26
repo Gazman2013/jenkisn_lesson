@@ -18,8 +18,9 @@
 18. "./ startup.sh"
 19.  "./startup.sh"
 20.   curl localhost:8090
-21.   history
+21. Configure Tomcat Web Management Interface
 22. https://issues.jenkins.io/browse/JENKINS-58687
-23.    http://34.123.201.23:8090/webapp/
-
-24. http://34.123.201.23:8090/demo/index.jsp
+23.   http://34.123.201.23:8090/webapp/
+24. HOMEWORK
+25. used https://github.com/tongueroo/demo-java.git 
+26. http://34.123.201.23:8090/demo/index.jsp
